@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 })
 app.use(express.json())
 app.use(cors({
-    origin: ["http://localhost:5173"],
+    origin: ["https://resetpasswordfend.onrender.com"],
     methods: ["GET", "POST"],
     credentials: true
 }))
@@ -23,8 +23,7 @@ app.use('/auth', UserRouter)
 
 mongoose.connect('mongodb+srv://sudharanips01:94woHa3qUi8O4sib@cluster0.w0il7fq.mongodb.net/authentication')
 
-//sudharanips01
-//94woHa3qUi8O4sib
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
