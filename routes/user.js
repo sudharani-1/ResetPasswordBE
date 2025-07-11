@@ -50,8 +50,8 @@ const token = jwt.sign({ id: user._id }, process.env.KEY, {expiresIn: "5m"})
         var transporter = nodemailer.createTransport({
              service: 'gmail',
              auth: {
-             user: 'sudharani.ps01@gmail.com',
-             pass: 'xlup osgv rlip qcnu'
+             user: process.env.EMAIL,
+             pass: process.env.PASSWORD
   }
 });
 
