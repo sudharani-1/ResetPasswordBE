@@ -59,7 +59,7 @@ const token = jwt.sign({ id: user._id }, process.env.KEY, {expiresIn: "5m"})
            from: 'sudharani.ps01@gmail.com',
            to: email,
            subject: 'Reset password',
-           text: `http://localhost:5173/resetPassword/${token}`
+           text: `https://resetpasswordfe.onrender.com/resetPassword/${token}`
 };
 
     transporter.sendMail(mailOptions, function(error, info){
