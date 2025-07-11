@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 })
 app.use(express.json())
 app.use(cors({
-    origin: ["https://resetpasswordfe.onrender.com/"],
+    origin: ["https://resetpasswordfe.onrender.com"],
     methods: ["GET", "POST"],
     credentials: true
 }))
